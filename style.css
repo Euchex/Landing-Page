@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+nav {
+    background-color: #f0f8ff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    list-style: none;
+    padding: 7px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 90px;
+}
+nav a {
+    height: 100%;
+    margin: 0 ;
+    padding: 0px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #102a43;
+}
+
+#cbtn a {
+    display: flex;
+    padding-right: px;
+    margin-right: 50px;
+}
+
+nav a:hover {
+    color: #06a0f1;
+    border-radius: 10px;
+}
+
+nav img.desk-logo{
+    width: 150px;
+    margin-left: 95px;
+    cursor: pointer;
+}
+
+#Log-btn {
+    padding-right: 30px;
+}
+
+#App-btn a {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: "poppins";
+    white-space: nowrap;
+    outline: none;
+    width: 100px;
+    text-align: center;
+    padding: 0 18px;
+    border-radius: 50px;
+    color: #6d8191;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-right: 40px;
+}
+
+#App-btn a:hover {
+    background-color: #06a0f1;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+    margin: 0 10px 20px;
+}
+
+.sidebar img {
+    width: 95px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+} 
+
+.log-sign{
+    padding-top: 30px;
+    margin-left: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero-section h1 {
+    font-size: 70px;
+    color: #102a43;
+}
+
+#desi1 {
+    color: #06a0f1;
+}
+
+.hero-section img{
+    width: 850px;
+}
+
+.testimonial-section {
+    text-align: center;
+    margin-top: 50px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.move-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 800px) {
+   .hideOnMobile{
+    display: none;
+   }
+   .menu-btn{
+    display: block;
+   }
+}
+@media (max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
