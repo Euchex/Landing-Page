@@ -6,14 +6,15 @@
     <title>Gofnetwork</title>
     <!---External googlefont link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
     <nav>
         <ul class="sidebar">
-            <li onclick="hideSidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li class="ham" onclick="hideSidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="#Products">Products</a></li>
             <li><a href="#solutions">Solutions</a></li>
             <li><a href="#security">Security</a></li>
@@ -52,6 +53,7 @@
     </div>
     <div class="testimonial-section">
         <h2>Testimonials</h2>
+        <div class="testimonial-container">
         <div class="testimonial">
             <img src="./img/testi (1).webp" alt="Testimonial Image 1">
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
@@ -68,13 +70,15 @@
             <p>- James Brown</p>
         </div>
     </div>
+    </div>
+
     <footer>
         <ul>
             <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact Us</a></li>
             <li><a href="#privacy">Privacy Policy</a></li>
         </ul>
-        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        <p class="right">&copy; 2024 Your Company. All Rights Reserved.</p>
     </footer>
     <button class="move-to-top" onclick="scrollToTop()">^</button>
 

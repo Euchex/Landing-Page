@@ -14,7 +14,7 @@ body {
 }
 nav {
     background-color: #f0f8ff;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
     width: 100%;
     list-style: none;
     padding: 7px 0px;
@@ -52,7 +52,7 @@ nav a:hover {
 
 nav img.desk-logo{
     width: 150px;
-    margin-left: 95px;
+    margin-left: 25px;
     cursor: pointer;
 }
 
@@ -112,7 +112,7 @@ nav img.desk-logo{
     width: 95px;
     padding-bottom: 30px;
     margin-left: 20px;
-} 
+}
 
 .log-sign{
     padding-top: 30px;
@@ -121,26 +121,59 @@ nav img.desk-logo{
 
 .hero-section {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
+    padding: 0 0 0 
+}
+
+.hero-section p {
+    margin-right: 60px;
 }
 
 .hero-section h1 {
-    font-size: 70px;
+    font-size: 60px;
     color: #102a43;
+    margin-right: 55px;
 }
 
 #desi1 {
     color: #06a0f1;
+    font-size: 60;
 }
 
 .hero-section img{
-    width: 850px;
+    width: 250px;
+    margin-right: 60px;
 }
 
 .testimonial-section {
     text-align: center;
     margin-top: 50px;
+    margin-right: 60px;
 }
+
+.testimonial-container {
+    display: flexbox;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.testimonial {
+    padding: 20px;
+}
+
+.testimonial img {
+    width: 90px;
+    border-radius: 50px;
+}
+
+.testimonial p {
+    margin: 10px 0;
+}
+
+.show {
+    display: block;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -150,6 +183,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+footer ul {
+    margin-right: 60px;
+}
+
+.right {
+    margin-right: 60px;
+}
+
 .move-to-top {
     position: fixed;
     bottom: 20px;
