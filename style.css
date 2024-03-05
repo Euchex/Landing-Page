@@ -14,7 +14,7 @@ body {
 }
 nav {
     background-color: #f0f8ff;
-    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     list-style: none;
     padding: 7px 0px;
@@ -130,6 +130,7 @@ ul a {
     width:fit-content;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .first span {
@@ -187,13 +188,17 @@ ul a {
 .mobi img {
     width: 700px;
     margin-left: 320px;
+    margin-bottom: 70px;
 }
 
+/* First section starts */
+
 .rev-sec {
-    display: flex;
     background: #fffdfa;
+    padding-top: 50px;
+    display: flex;
     flex-direction: column;
-    padding-top: 70px;
+    background-attachment: fixed;
 }
 
 .rev-sec h1 {
@@ -230,7 +235,7 @@ ul a {
     margin-top: 20px;
 }
 
-.img4 {
+.pic-sec {
     position: relative;
     width: 100px; 
     height: 200px;
@@ -238,79 +243,83 @@ ul a {
     margin-top: -450px;
   }
 
-  .img4 img {
+  .pic-sec img {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
     background-image: url(img/bg2.png); 
     background-repeat: no-repeat;
     background: transparent;
   }
 
-  .s1{
+  .s1 {
     margin-left: 90px;
-    width: 400px;
+    width: 350px;
   }
 
   .s2 {
     z-index: 1;
     margin-left: 90px;
-    margin-top: 100px;
-    width: 400px;
-    
+    /* margin-top: 100px; */
+    width: 350px;
   }
 
   .s3 {
     z-index: 2;
     margin-left: 20px;
-    margin-top: -20px;
-    width: 300px;
+    /* margin-top: 0px; */
+    width: 220px;
   }
 
-.hero-section img{
+.hero-section img {
     width: 250px;
     margin-right: 60px;
 }
 
-.sec4{
+/* Second section starts */
+
+.call-sec {
     display: flex;
     flex-direction: column-reverse;
     background-color: white;
-    margin-top: 290px;
+    margin-top: 120px;
   }
 
-  .sec4 h1{
-    font-size: 30px;
+  .vcall h1 {
+    font-size: 50px;
+    font-weight: bold;
     color:#102A43 ;
     width:500px;
-    margin-left: 900px;
+    margin-left: 800px;
     margin-top: 250px;
 }
 
-.sec4 h1 span{
+.vcall h1 span {
     font-size: 50px;
     color: #41BEFF;
-    
 }
 
-.sec4 p{
+.vcallpc {
+    margin-left: 730px;
+}
+
+.vcall p {
     color: #506C86;
     font-size: 14px;
-    width:300px;
+    width:450px;
     margin-left: 70px;
-    
+    padding-top: 10px;
 }
 
-.sec41 .checklist li {
+.vcall .checklist li {
     list-style: none;
     padding: 8px;
     color: #102A43;
     font-size: 14px;
     font-weight: bold;
-    
   }
   
- .sec41 .checklist li::before {
+ .vcall .checklist li::before {
     content: '\2713'; 
     color: #41BEFF; 
     display: inline-block;
@@ -323,11 +332,218 @@ ul a {
     margin-bottom: 10px;
   }
 
-  .checklist li::after{
+  .checklist li::after {
     margin: 30px;
     padding-right: 10px;
   }
 
+  .calling {
+    margin-top: -450px;
+    margin-left: 150px;
+  }
+
+  .dail {
+    margin-bottom: 260px;
+  }
+
+  .c1 {
+    margin-right: -390px;
+    margin-bottom: 70px;
+  }
+
+  /*Third Section starts*/
+  .secdb {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 100px;
+  }
+
+  .secdb h1 {
+    font-size: 52px;
+    color: #102A43;
+    width: 900px;
+    padding-left: 30px;
+    margin-left: 70px;
+  }
+
+  .secdb h1 span {
+    color: #06a0f1;
+  }
+
+  .secdb p {
+    color: #102A43;
+    font-size: 18px;
+    width: 500px;
+    padding-left: 20px;
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+
+  .secdb ul {
+    list-style: none;
+    padding: 20px;
+    color: #102A43;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 80px;
+  }
+
+  .secdb ul li::before {
+    content: '\2713';
+    color: #06a0f1;
+    display: inline-block;
+    width: 1em;
+    padding-left: 20px;
+    padding: 4px;
+    background-color: #EFF8FF;
+    border-radius: 20px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .secdb ul li::after {
+    margin: 30px;
+    padding-right: 10px;
+  }
+
+  .userdb {
+    position: relative;
+    width: 300px;
+    height: 100px;
+  }
+
+  .userdb img {
+    position: absolute;
+    width: 270px;
+    top: 0;
+    left: 0;
+    padding-left: 800px;
+    margin-top: -350px;
+  }
+
+  .ud {
+    margin-left: 200px;
+  }
+
+  .um {
+    margin-left: 10px;
+  }
+
+  /* Fourth section */
+
+  .elevate {
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+  }
+
+  .elevate h1 {
+    font-size: 50px;
+    color: #102A43;
+    width: 900px;
+    text-align: center;
+    padding-left: 230px;
+  }
+
+  .elevate h1 span {
+    color: #06a0f1;
+  }
+
+  .elevate p {
+    color: #506C86;
+    font-size: 18px;
+    justify-content: center;
+    align-content: center;
+    width: 900px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 230px;
+  }
+
+  /* Fifth Section */
+
+  .vcon {
+    background-color: #020f33;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 150px;
+    border-radius: 20px;
+  }
+
+  .vcon1a {
+    width: 520px;
+    height: 440px;
+    justify-content: center;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    margin-top: -90px;
+    margin-left: 70px;
+  }
+
+  .vcon1 img{
+    width: 450px;
+    margin-top: -500px;
+    margin-left: 110px;
+  }
+
+  .vcon .vcon1a {
+    text-align: center;
+    padding: 30px;
+    color: #020f33;
+    margin-bottom: ;
+  }
+
+  .vcon1a p {
+    color: #506C86;
+    padding: 20px;
+  }
+
+  .vcon2 {
+    width: 580px;
+    height: 500px;
+    justify-content: center;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    margin-top: -654px;
+    margin-left: 680px;
+  }
+
+  .vcon2 img {
+    width: 480px;
+    margin-top: -230px;
+    margin-left: 40px;
+  }
+
+  .vcon2 .vcon2b {
+    text-align: center;
+    padding: 30px;
+    color: #020f33;
+  }
+
+  .vcon2b p {
+    color: #506C86;
+    padding: 20px;
+  }
+
+  .vcondiv {
+    padding: 100px;
+    text-align: center;
+  }
+  .vcondiv h1 {
+    color: white;
+    width: 600px;
+    margin-left: 290px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+/* Mobile style begins */
 
 .show {
     display: block;
